@@ -133,13 +133,18 @@ form {
     gap: 5px;
 }
 .input-group label {
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--very-dark-violet);
 }
 .input-group input {
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 4px;
-    border: 1px solid #0004;
+    border: 1px solid rgb(180, 180, 180);
+}
+input::placeholder {
+    color: hsl(0, 0%, 57.3%);
 }
 .row-input {
     width: 70%;
