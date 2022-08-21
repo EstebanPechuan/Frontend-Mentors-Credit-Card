@@ -91,6 +91,9 @@ body {
     border-radius: 50%;
     border: 1px solid #fff;
 }
+.name-card {
+    text-transform: uppercase;
+}
 .numbers-card {
     margin-top: auto;
 }
@@ -102,9 +105,16 @@ body {
 .back {
     width: 80%;
     align-self: end;
+    position: relative;
 }
 .back > img {
     width: 100%;
+}
+.back .input-cvc {
+    position: absolute;
+    top: 44%;
+    right: 12%;
+    color: #fff;
 }
 
 form {
