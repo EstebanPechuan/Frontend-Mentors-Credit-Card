@@ -41,3 +41,9 @@ const cvcCard = document.querySelector('#cvc')
     let number1 = cvcCard.value.substring(0, 3)
     cardCvc.innerText = number1
 })
+
+
+function confirm() {
+    document.querySelector('form').style.display = 'none'
+    document.querySelector('.thanks').style.display = 'flex'
+}
