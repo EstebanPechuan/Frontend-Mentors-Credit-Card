@@ -10,10 +10,4 @@ numberCard.addEventListener('input', () => {
     let result = number1 + ' ' + number2 + ' ' + number3 + ' ' + number4 + ' '
     
     cardNumbers.innerText = result
-    
-    if (cardNumbers.value == '') {
-        cardNumbers.innerText = '0000 0000 0000 0000'
-    }
-
-    alert(cardNumbers.textContent)
 })
