@@ -22,127 +22,101 @@
   </style>
 </head>
 <body>
-  <div class="pattern-bg">
-    <picture>
-      <source media="(max-width: 768px)" srcset="images/bg-main-mobile.png">
-      <img src="images/bg-main-desktop.png" alt="">
-    </picture>
-  </div>
-
-  <div class="container">
-    <div class="imgs">
-      <div class="front">
-        <img src="images/bg-card-front.png" alt="">
-
-        <div class="info">
-          <div class="circles">
-            <span class="circle1"></span>
-            <span class="circle2"></span>
-          </div>
+  <main>
+    <div class="pattern-bg">
+      <picture>
+        <source media="(max-width: 768px)" srcset="images/bg-main-mobile.png">
+        <img src="images/bg-main-desktop.png" alt="Background pattern">
+      </picture>
+    </div>
   
-          <div class="numbers-card">
-            0000 0000 0000 0000
-          </div>
+    <div class="container">
+      <div class="imgs">
+        <div class="front">
+          <img src="images/bg-card-front.png" alt="Card front">
   
-          <div class="row-data">
-            <div class="name-card">
-              JANE APPLESEED
+          <div class="info">
+            <div class="circles">
+              <span class="circle1"></span>
+              <span class="circle2"></span>
             </div>
-  
-            <div class="date-card">
-              <span class="month">00</span>/<span class="year">00</span>
+    
+            <div class="numbers-card">
+              0000 0000 0000 0000
+            </div>
+    
+            <div class="row-data">
+              <div class="name-card">
+                JANE APPLESEED
+              </div>
+    
+              <div class="date-card">
+                <span class="month">00</span>/<span class="year">00</span>
+              </div>
             </div>
           </div>
         </div>
+  
+        <div class="back">
+          <img src="images/bg-card-back.png" alt="Card back">
+  
+          <div class="input-cvc">000</div>
+        </div>
       </div>
-
-      <div class="back">
-        <img src="images/bg-card-back.png" alt="">
-
-        <div class="input-cvc">000</div>
-      </div>
-    </div>
-
-    <form>
-      <div class="input-group">
-        <label for="name">CARDHOLDER NAME</label>
-        <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed">
-      </div>
-      
-      <div class="input-group">
-        <label for="name">CARD NUMBER</label>
-        <input type="number" id="number" name="name" placeholder="e.g. 1234 5678 9123 0000" max="9999999999999999">
-        <p>Wrong format</p>
-      </div>
-      
-      <div class="row-input">
+  
+      <form action="#">
         <div class="input-group">
-          <label for="name">EXP. DATE (MM/YY)</label>
-          
-          <div class="row-inputs">
-            <input type="number" id="month" name="name" placeholder="MM" max="99">
-            <input type="number" id="year" name="name" placeholder="YY">
-            <p>Wrong format</p>
-          </div>
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed">
         </div>
         
         <div class="input-group">
-          <label for="name">CVC</label>
-          <input type="number" id="cvc" name="name" placeholder="e.g. 123" max="999">
+          <label for="number">CARD NUMBER</label>
+          <input type="number" id="number" name="number" placeholder="e.g. 1234 5678 9123 0000" max="9999999999999999">
           <p>Wrong format</p>
         </div>
+        
+        <div class="row-input">
+          <div class="input-group">
+            <label for="exp">EXP. DATE (MM/YY)</label>
+            
+            <div class="row-inputs">
+              <input type="number" id="month" name="exp" placeholder="MM" max="99">
+              <input type="number" id="year" name="exp2" placeholder="YY" max="99">
+              <p>Wrong format</p>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" name="cvc" placeholder="e.g. 123" max="999">
+            <p>Wrong format</p>
+          </div>
+        </div>
+  
+        <div class="input-group">
+          <input type="button" onclick="confirm()" value="Confirm">
+        </div>
+      </form>
+  
+      <div class="thanks">
+        <div class="thanks-img">
+          <img src="images/icon-complete.svg" alt="Icon complete">
+        </div>
+  
+        <h1>THANK YOU!</h1>
+  
+        <p>We've added your card details</p>
+  
+        <input type="button" value="Continue" onclick="location.reload()">
       </div>
-
-      <div class="input-group">
-        <input type="button" onclick="confirm()" value="Confirm">
-      </div>
-    </form>
-
-    <div class="thanks">
-      <div class="thanks-img">
-        <img src="images/icon-complete.svg" alt="">
-      </div>
-
-      <h2>THANK YOU!</h2>
-
-      <p>We've added your card details</p>
-
-      <input type="button" value="Continue" onclick="location.reload()">
     </div>
-  </div>
-
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/EstebanPechuan">Esteban Pechuan</a>.
+  </footer>
 
   <script src="js/main.js"></script>
-  <!-- 0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm -->
-
-  <!-- Completed state start -->
-
-  <!-- Thank you!
-  We've added your card details
-  Continue -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Esteban Pechuan</a>.
-  </div> -->
 </body>
 </html>
